@@ -1,1 +1,7 @@
-#sknet{ background: #eeeeee; }
+#sknet{
+    max-width: calc(3 * (300px + 2px + 10px * 2));
+    background: #eeeeee;
+    font-family: "Open Sans", sans-serif;
+    margin: auto; display: flex; flex-wrap: wrap;
+}
+#sknet > div.card{ width: 300px; margin: 10px; background: white; border: 1px solid #bdbdbd; border-radius:6px; display:flex; flex-direction: column; }

@@ -7,7 +7,7 @@ function insertTariffCard($tariff){
 		$type = stristr($tariff->title, 'Огонь')?'fire':'ground';
 	}
 
-	echo "<div class='$type'>";
+	echo "<div class='$type card'>";
 	echo '<div class="tariff-name">Тариф "'.$tariff->title.'"</div>';
 
 	echo '<div class="details">

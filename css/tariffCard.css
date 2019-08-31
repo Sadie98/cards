@@ -1,6 +1,6 @@
-#tariffs{ font-family: "Open Sans", sans-serif; max-width: calc(3 * (300px + 2px + 10px * 2)); margin: auto; display: flex; flex-wrap: wrap; }
+/*#tariffs{ font-family: "Open Sans", sans-serif; max-width: calc(3 * (300px + 2px + 10px * 2)); margin: auto; display: flex; flex-wrap: wrap; }*/
 
-#tariffs > div{ width: 300px; margin: 10px; background: white; border: 1px solid #bdbdbd; border-radius:6px; display:flex; flex-direction: column; }
+/*#tariffs > div.card{ width: 300px; margin: 10px; background: white; border: 1px solid #bdbdbd; border-radius:6px; display:flex; flex-direction: column; }*/
 #tariffs > div > *{ margin-left: 20px; }
 #tariffs .tariff-name{ height: 30px; border-bottom: 1px solid #bdbdbd; color:#8bc34a; font-size: 18px; font-weight: 600; }
 
