@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="81e19544-4214-4f21-b6d9-a7d94653868f" name="2.57.89.55" url="http://2.57.89.55">
+        <fileTransfer host="2.57.89.55" port="21" rootFolder="/domains/sadie98.ru/public_html/test/">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
