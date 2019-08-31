@@ -1,11 +1,11 @@
 #tariffs > div > *{ margin-left: 20px; }
+#tariffs .title{ height: 30px; border-bottom: 1px solid #bdbdbd; color:#8bc34a; font-size: 18px; font-weight: 600; }
 
 #tariffs .details{ margin: 0; padding: 10px 0; flex: 1 0 auto; }
 #tariffs .speed{ width: 105px; line-height: 30px; margin-left: 0; padding-left: 20px; color: white; font-weight: 600; }
 #tariffs .water .speed{ background: #1976d2; }
 #tariffs .fire .speed{ background: #d84315; }
 #tariffs .ground .speed{ background: #5d4037; }
-
 
 #tariffs .link{ padding: 5px 0; border-top: 1px solid #bdbdbd; flex:0 0 auto; }
 #tariffs .link > a{ font-size:14px; text-decoration: none; }
