@@ -17,8 +17,10 @@ function insertTariffCard($tariff){
 	$minPrice = 999999999;
 	$maxPrice = 0;
 	foreach($tariff->tarifs as $plan){
-		if($plan->price > $maxPrice) $maxPrice = $plan->price;
-		if($plan->price < $minPrice) $minPrice = $plan->price;
+		$price = $plan->price / $plan->pay_period;
+
+		if($price > $maxPrice) $maxPrice = $price;
+		if($price < $minPrice) $minPrice = $price;
 	}
 	echo '<div class="prices">'.$minPrice.' - '.$maxPrice.' ₽/мес</div>';
 	if($tariff->free_options){
