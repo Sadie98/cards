@@ -8,7 +8,7 @@ function insertTariffCard($tariff){
 	}
 
 	echo "<div class='$type card'>";
-	echo '<div class="tariff-name">Тариф "'.$tariff->title.'"</div>';
+	echo '<div class="title">Тариф "'.$tariff->title.'"</div>';
 
 	echo '<div class="details">
 			<div class="speed">'.$tariff->speed.' Мбит/c</div>';
@@ -24,7 +24,7 @@ function insertTariffCard($tariff){
 	}
 	echo '<div class="prices">'.$minPrice.' - '.$maxPrice.' ₽/мес</div>';
 	if($tariff->free_options){
-		echo '<div class="free-options">';
+		echo '<div class="additional">';
 		foreach($tariff->free_options as $freeOption){
 			echo '<div>'.$freeOption.'</div>';
 		};
