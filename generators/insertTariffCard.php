@@ -37,4 +37,6 @@ function insertTariffCard($tariff){
 		</div>';
 
 	echo '</div>';
+
+	return [];
 }
