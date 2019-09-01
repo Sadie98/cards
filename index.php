@@ -26,7 +26,7 @@ foreach($tariffs as $tariff){
         if($plan->price / $plan->pay_period > $maxPrice) $maxPrice = $plan->price / $plan->pay_period;
     }
 
-	echo '<div>';
+	echo '<div class="plan-'.md5($tariff->title).'">';
     foreach($tariff->tarifs as $plan){
         insertPlanCard($plan, $maxPrice);
     }
