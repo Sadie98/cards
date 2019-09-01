@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 
 <head>
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="js/eventsInit.js"></script>
+
 	<link href="css/common.css" rel="stylesheet">
 	<link href="css/tariffCard.css" rel="stylesheet">
 	<link href="css/planCard.css" rel="stylesheet">
@@ -28,7 +31,7 @@ foreach($tariffs as $tariff){
     }
 
 	echo '<div class="plan-'.md5($tariff->title).'">';
-    echo '<div class="header">Тариф "'.$tariff->title.'"</div>';
+    echo '<div class="header back">Тариф "'.$tariff->title.'"</div>';
     foreach($tariff->tarifs as $plan){
         insertPlanCard($plan, $maxPrice);
     }

@@ -1,1 +1,3 @@
-#plans .header{ text-align: center; font-weight: 600; }
+#plans > div{ display: none; flex-wrap: wrap; justify-content: center; padding-top: 25px;}
+
+#plans .header{ position:absolute; top:10px; font-weight: 600; }
