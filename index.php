@@ -3,6 +3,7 @@
 <head>
 	<link href="css/common.css" rel="stylesheet">
 	<link href="css/tariffCard.css" rel="stylesheet">
+	<link href="css/planCard.css" rel="stylesheet">
 </head>
 <body>
 <div id="sknet">
@@ -27,6 +28,7 @@ foreach($tariffs as $tariff){
     }
 
 	echo '<div class="plan-'.md5($tariff->title).'">';
+    echo '<div class="header">Тариф "'.$tariff->title.'"</div>';
     foreach($tariff->tarifs as $plan){
         insertPlanCard($plan, $maxPrice);
     }
