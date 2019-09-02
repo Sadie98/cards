@@ -4,5 +4,5 @@
 #tariffs .fire .speed{ background: #d84315; }
 #tariffs .ground .speed{ background: #5d4037; }
 
-#tariffs .link{ padding: 5px 0; margin-left: 20px; border-top: 1px solid #bdbdbd; flex:0 0 auto; }
-#tariffs .link > a{ font-size:14px; text-decoration: none; }
+#tariffs .footer{ padding: 5px 0; flex: 0 0 auto; }
+#tariffs .footer > a{ font-size: 14px; text-decoration: none; }

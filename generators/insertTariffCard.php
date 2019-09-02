@@ -32,7 +32,7 @@ function insertTariffCard($tariff){
 	}
 	echo '</div>';
 
-	echo '<div class="link">
+	echo '<div class="footer">
 		<a href="'.$tariff->link.'">Узнать подробнее на сайте www.sknt.ru</a>
 		</div>';
 

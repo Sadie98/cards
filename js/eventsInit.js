@@ -34,8 +34,7 @@ $(function(){
 		$card.append('<div class="prices">Период оплаты - ' + months + '<br>' + price + '</div>');
 		$card.append('<div class="additional">разовый платёж - ' + payment + '₽<br>со счёта спишется - ' + payment+ '₽</div>');
 		$card.append('<div class="comment">вступит в силу - сегодня<br>активно до - ' + exDate + '</div>');
-
-		$card.append('<div class="link"><a class="btn">Выбрать</a></div>');
+		$card.append('<div class="footer"><a class="btn">Выбрать</a></div>');
 	});
 
 	// назад к выбору плана
