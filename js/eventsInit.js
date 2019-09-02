@@ -22,7 +22,7 @@ $(function(){
 		var $selection = $('#selection');
 		$selection.show();
 
-		$selection.append('<div class="header back">Выбор тарифа</div>');
+		$selection.append('<div class="header back"><span>Выбор тарифа</span></div>');
 		$selection.append('<div class="card"></div>');
 
 		var $card = $('.card', $selection);

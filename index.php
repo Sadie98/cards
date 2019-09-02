@@ -34,7 +34,7 @@ foreach($tariffs as $tariff){
     }
 
 	echo '<div class="plan-'.md5($tariff->title).'">';
-    echo '<div class="header back">Тариф "'.$tariff->title.'"</div>';
+    echo '<div class="header back"><span>Тариф "'.$tariff->title.'"</span></div>';
     foreach($tariff->tarifs as $plan){
         insertPlanCard($plan, $maxPrice);
     }
