@@ -1,31 +1,35 @@
+/* global sknet */
+
 $(function(){
-	$('#tariffs').on('click', 'div[class*=tariff]', function(){
+	// выбор тарифа
+	sknet.$tariffs.on('click', 'div[class*=tariff]', function(){
 		var tariffId = $(this).attr('class').split(/\s+/).filter(function(className){return className.match(/tariff/)})[0].split('-')[1];
-		$('#plans div.plan-' + tariffId).css('display', 'flex');
-		$('#tariffs').hide();
+		$('.plan-' + tariffId, sknet.$plans).css('display', 'flex');
+		sknet.$tariffs.hide();
 	});
 
-	$('#plans').on('click', '.back', function(){
-		$('#plans > div').hide();
-		$('#tariffs').show();
+	// назад к тарифам
+	sknet.$plans.on('click', '.back', function(){
+		$('> div', sknet.$plans).hide();
+		sknet.$tariffs.show();
 	});
 
-	$('#plans').on('click', '.card', function(){
+	// вставить карточку покупки плана
+	sknet.$plans.on('click', '.card', function(){
 		var title = $(this).siblings('.header').text();
 		var months = $(this).find('.title').text();
 		var price = $(this).find('.prices').text();
 		var payment = $(this).data('price');
 		var exDate = $(this).data('ex-date');
 
-		$('#plans').hide();
+		sknet.$plans.hide();
 
-		var $selection = $('#selection');
-		$selection.show();
+		sknet.$selection.show();
 
-		$selection.append('<div class="header back"><span>Выбор тарифа</span></div>');
-		$selection.append('<div class="card"></div>');
+		sknet.$selection.append('<div class="header back"><span>Выбор тарифа</span></div>');
+		sknet.$selection.append('<div class="card"></div>');
 
-		var $card = $('.card', $selection);
+		var $card = $('.card', sknet.$selection);
 		$card.append('<div class="title">' + title + '</div>');
 		$card.append('<div class="prices">Период оплаты - ' + months + '<br>' + price + '</div>');
 		$card.append('<div class="additional">разовый платёж - ' + payment + '₽<br>со счёта спишется - ' + payment+ '₽</div>');
@@ -34,9 +38,10 @@ $(function(){
 		$card.append('<div class="link"><a class="btn">Выбрать</a></div>');
 	});
 
-	$('#selection').on('click', '.back', function(){
-		$('#selection').html('');
-		$('#selection').hide();
-		$('#plans').show();
+	// назад к выбору плана
+	sknet.$selection.on('click', '.back', function(){
+		sknet.$selection.html('');
+		sknet.$selection.hide();
+		sknet.$plans.show();
 	});
 });

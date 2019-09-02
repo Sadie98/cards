@@ -2,6 +2,7 @@
 
 <head>
     <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="js/init.js"></script>
     <script src="js/eventsInit.js"></script>
 
 	<link href="css/common.css" rel="stylesheet">
