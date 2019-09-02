@@ -7,6 +7,7 @@
 	<link href="css/common.css" rel="stylesheet">
 	<link href="css/tariffCard.css" rel="stylesheet">
 	<link href="css/planCard.css" rel="stylesheet">
+	<link href="css/selectionCard.css" rel="stylesheet">
 </head>
 <body>
 <div id="sknet">
@@ -14,6 +15,7 @@
 include('generators/getTariffs.php');
 include('generators/insertTariffCard.php');
 include('generators/insertPlanCard.php');
+include('generators/genSelectionCard.php');
 
 // первый экран
 echo '<div id="tariffs">';
@@ -21,6 +23,7 @@ foreach($tariffs as $tariff){
     insertTariffCard($tariff);
 }
 echo '</div>';
+$selectionCards = '<div id="selection">';
 
 // второй экран
 echo '<div id="plans">';
@@ -39,6 +42,7 @@ foreach($tariffs as $tariff){
 }
 echo '</div>';
 
+echo '<div id="selection"></div>';
 ?>
 </div>
 </body>
