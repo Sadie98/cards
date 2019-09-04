@@ -7,16 +7,14 @@
 
 	<link href="css/common.css" rel="stylesheet">
 	<link href="css/tariffCard.css" rel="stylesheet">
-	<link href="css/planCard.css" rel="stylesheet">
-	<link href="css/selectionCard.css" rel="stylesheet">
 </head>
 <body>
 <div id="sknet">
+
 <?
 include('generators/getTariffs.php');
 include('generators/insertTariffCard.php');
 include('generators/insertPlanCard.php');
-include('generators/genSelectionCard.php');
 
 // первый экран
 echo '<div id="tariffs">';
